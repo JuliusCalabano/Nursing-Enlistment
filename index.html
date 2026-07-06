@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSTC-SIT2026-2027</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./CSTC.png">
+</head>
+<body>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe8OyVeMg6oUSIxsHNWSk-s7qoRBe2Yh02bXuAOe6PIhOUgtA/formResponse"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted()">
+
+        <label>LAST NAME</label>
+        <input type="text" name="entry.366340186" placeholder="Enter your Last Name" required>
+
+        <label>FIRST NAME</label>
+        <input type="text" name="entry.32836828" placeholder="Enter your First Name" required>
+
+        <label>MIDDLE NAME</label>
+        <input type="text" name="entry.1637352547" placeholder="Enter Your Middle Name" required>
+
+        <label>DATE OF BIRTH</label>
+        <input type="date" name="entry.144395840" placeholder="Enter your Birthday" required>
+
+        <label>DATE ENROLLED</label>
+        <input type="date" name="entry.1679103886" placeholder="Enter date of Enrollment" required>
+
+        <label>CONTACT NUMBER</label>
+        <input type="text" name="entry.1102371869" placeholder="Enter your Contact Number" required>
+
+        <label>GUARDIAN CONTACT NUMBER</label>
+        <input type="text" name="entry.1765363105" placeholder="Enter your Contact Number" required>
+
+        <label>FACEBOOK ACCOUNT</label>
+        <input type="text" name="entry.1283362244" placeholder="Enter your Facebook Account" required>
+
+        <label>EMAIL</label>
+        <input type="text" name="entry.1934508842" placeholder="Enter your Facebook Account" required>
+
+        <label>LAST SCHOOL ATTENDED</label>
+        <input type="text" name="entry.2008111087" placeholder="Enter last school attended." required>
+
+        <label>REMARKS</label>
+            <select name="entry.2003870497" required>
+                <option value="" disabled selected>Select remarks</option>
+                <option value="Return">Return</option>
+                <option value="Enrolled">Enrolled</option>
+                <option value="Transferee">Transferee</option>
+                <option value="Drop">Drop</option>
+            </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <p id="msg" style="display:none;color:green;">
+    ✅ Response Submitted!
+    </p>
+
+<script>
+function submitted(){
+ document.getElementById("msg").style.display="block";
+}
+
+
+</script>
+</body>
+</html>
+
